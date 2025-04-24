@@ -6,6 +6,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Phone } from "lucide-react";
 
 export default function Home() {
+  const phoneNumber = "+15551234567";
+  const whatsappMessage = "Hello, I need phone repair service!";
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <div className="container mx-auto py-10">
       <section className="mb-12 text-center">
@@ -129,6 +133,13 @@ export default function Home() {
               <div>
                 <p className="font-semibold">Address:</p>
                 <p>123 Main Street, Anytown, USA</p>
+              </div>
+               <div>
+                <Button asChild>
+                  <a href={whatsappURL} target="_blank" rel="noopener noreferrer">
+                    Contact us on WhatsApp
+                  </a>
+                </Button>
               </div>
               <div>
                 <p className="font-semibold">Business Hours:</p>
