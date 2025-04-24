@@ -6,14 +6,17 @@ import { Textarea } from "@/components/ui/textarea";
 import { Phone } from "lucide-react";
 
 export default function Home() {
-  const phoneNumber = "+15551234567";
+  const phoneNumber = "+60165408237";
+
   const whatsappMessage = "Hello, I need phone repair service!";
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+  console.log("Generated WhatsApp URL:", whatsappURL);
 
   return (
     <div className="container mx-auto py-10">
       <section className="mb-12 text-center">
-        <h1 className="text-4xl font-bold mb-4">FixMyPhone</h1>
+        <h1 className="text-4xl font-bold mb-4">Repair Phone Sini! !</h1>
         <p className="text-lg text-muted-foreground">Your trusted phone repair service. We fix all kinds of phone issues!</p>
       </section>
 
@@ -23,27 +26,27 @@ export default function Home() {
           <Card>
             <CardHeader>
               <CardTitle>Screen Repair</CardTitle>
-              <CardDescription>Cracked screen? We replace it quickly!</CardDescription>
+              <CardDescription>Cracked screen? Repair sini je </CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Starting from $79</p>
+              <p>Starting from RM80</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
               <CardTitle>Battery Replacement</CardTitle>
-              <CardDescription>Is your battery draining fast? Get a new one!</CardDescription>
+              <CardDescription>Batery Cepat Habis? Repair sini je</CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Starting from $49</p>
+              <p>Starting from RM40</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
               <CardTitle>Water Damage Repair</CardTitle>
-              <CardDescription>Accidentally dropped your phone in water? We can help!</CardDescription>
+              <CardDescription>Phone masuk air ke? Kita orang boleh tolong check kan!</CardDescription>
             </CardHeader>
             <CardContent>
               <p>Contact for a quote</p>
@@ -53,7 +56,7 @@ export default function Home() {
           <Card>
             <CardHeader>
               <CardTitle>Charging Port Repair</CardTitle>
-              <CardDescription>Having trouble charging your phone?</CardDescription>
+              <CardDescription>Ada masalah nak cas phone? Repair sini je </CardDescription>
             </CardHeader>
             <CardContent>
               <p>Starting from $59</p>
@@ -63,17 +66,17 @@ export default function Home() {
           <Card>
             <CardHeader>
               <CardTitle>Camera Repair</CardTitle>
-              <CardDescription>Is your camera not working?</CardDescription>
+              <CardDescription>Camera Tak function ? Kami boleh repair! </CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Starting from $69</p>
+              <p>Starting from RM50</p>
             </CardContent>
           </Card>
 
            <Card>
             <CardHeader>
               <CardTitle>Other Repairs</CardTitle>
-              <CardDescription>We fix all kinds of issues!</CardDescription>
+              <CardDescription> Bagitau je rosak apa, Kami betulkan!</CardDescription>
             </CardHeader>
             <CardContent>
               <p>Contact for a quote</p>
@@ -124,15 +127,15 @@ export default function Home() {
             <div className="grid gap-4">
               <div>
                 <p className="font-semibold">Phone:</p>
-                <p>+1 (555) 123-4567</p>
-              </div>
+                <p>+60 (16) 5408237</p>
+                              </div>
               <div>
                 <p className="font-semibold">Email:</p>
-                <p>support@fixmyphone.com</p>
+                <p>repair@gmail.com</p>
               </div>
               <div>
                 <p className="font-semibold">Address:</p>
-                <p>123 Main Street, Anytown, USA</p>
+                <p>No1, Parit Kayu Ara Pasong, Pontian 82010, Johor</p>
               </div>
                <div>
                 <Button asChild>
@@ -143,9 +146,9 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-semibold">Business Hours:</p>
-                <p>Monday - Friday: 9am - 5pm</p>
-                <p>Saturday: 10am - 2pm</p>
-                <p>Sunday: Closed</p>
+                <p>Monday - Friday: 8am - 10am</p>
+                <p>Saturday: 8 am - 5pm</p>
+                <p>Sunday: Tak Kerja</p>
               </div>
             </div>
           </CardContent>
